@@ -10,21 +10,17 @@ výška obrázku (imgheight), predvolená výšk je 100px.
 
 
 Examples 1: imgwidth = "120", imgheight = "100", imgnum = "0" .
-<code>
 <?php $imgwidth = "120"; $imgheight = "100"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?> 
-</code 
+ 
 Examples 2: imgwidth = "180", imgheight = "120", imgnum = "0" .
-<code>
 <?php $imgwidth = "180"; $imgheight = "120"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?> 
- </code>
+
 Examples 3: imgwidth = "200", imgheight = "150", imgnum = "2" .
-<code>
 <?php $imgwidth = "200"; $imgheight = "150"; $imgnum = "2"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?> 
-</code> 
+
 Examples 4: imgwidth = "200", imgheight = "150", imgnum = "10" . ??? imgnum = "10" = no exist (picture does not exist). 
-<code>
 <?php $imgwidth = "200"; $imgheight = "150"; $imgnum = "6"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?>
-</code>
+
 
 ----------------------------------
 Do skriptu "manage-photo.php" som pridal čast kódu:
