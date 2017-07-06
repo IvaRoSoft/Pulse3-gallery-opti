@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="Sk">
+  <head>
+    <meta charset="utf-8">
+  <title>Add on gallery</title>
+  </head>
+  <body>
+<div>
+	<p>
+		Upravil som pôvodnú gallery.php a nazval som tento skript gallery-opti.php. Sample = page "themes".
+	</p>
+	<p>
+		V tejto upravenej verzii  môžete (nemusíte)zadať 3 parametre:
+	</p>
+	<p>
+		 šírka obrázku (imgwidth), predvolená šírka je 120px.
+	</p>
+	<p>
+		 výška obrázku (imgheight), predvolená výšk je 100px.
+	</p>
+	<p>
+		 číslo obrázku (imgnum), predvolená hodnota je 0, (0 = všetky obrázky) ; (2 = druhý obrázok) ;
+(if 10  = no exist) then imgnum = 0 (all image)
+	</p>
+	<br>
+	<p>
+		<span style="color: rgb(149, 55, 52);">Examples 1:</span> imgwidth = "120", imgheight = "100", imgnum = "0" .
+	</p>
+	<p>
+		<span style="color: rgb(79, 97, 40);">&lt;?php $imgwidth = "120"; $imgheight = "100"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?&gt;</span>
+	</p>
+	<?php
+ $imgwidth = "120"; $imgheight = "100"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); 
+?>
+	<p>
+		<span style="color: rgb(149, 55, 52);">Examples 2:</span> imgwidth = "180", imgheight = "120", imgnum = "0" .
+	</p>
+	<p>
+		<span style="color: rgb(79, 97, 40);">&lt;?php $imgwidth = "180"; $imgheight = "120"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?&gt;</span>
+	</p>
+	<?php
+ $imgwidth = "180"; $imgheight = "120"; $imgnum = "0"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); 
+?>
+	<p>
+		<span style="color: rgb(149, 55, 52);">Examples 3:</span> imgwidth = "200", imgheight = "150", imgnum = "2" .
+	</p>
+	<p>
+		<span style="color: rgb(79, 97, 40);">&lt;?php $imgwidth = "200"; $imgheight = "150"; $imgnum = "2"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?&gt;</span>
+	</p>
+	<?php
+ $imgwidth = "200"; $imgheight = "150"; $imgnum = "2"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); 
+?>
+	<p>
+		<span style="color: rgb(149, 55, 52);">Examples 4:</span> imgwidth = "200", imgheight = "150", imgnum = "10" .   ??? imgnum = "10" = no exist (picture does not exist).
+	</p>
+	<p>
+		<span style="color: rgb(79, 97, 40);">&lt;?php $imgwidth = "200"; $imgheight = "150"; $imgnum = "6"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); ?&gt;</span>
+	</p>
+	<?php
+ $imgwidth = "200"; $imgheight = "150"; $imgnum = "6"; $gallery ="Gallery1"; include($_SERVER["DOCUMENT_ROOT"]."pulsepro/includes/gallery-opti.php"); 
+?>
+</div>
+  </body>
+</html>
