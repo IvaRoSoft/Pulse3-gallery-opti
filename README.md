@@ -31,3 +31,4 @@ Do skriptu "manage-photo.php" som pridal čast kódu:
 <pre>
 <p><b>Optional Thumbnail Gallery</b></p><input value = '&lt;?php $imgwidth = "120"; $imgheight = "100"; $imgnum = "0"; $gallery ="<?php if (!empty($_GET["g"])) { echo htmlentities($_GET["g"]);} ?>"; include($_SERVER["DOCUMENT_ROOT"]."/<?php echo $pulse_dir; ?>/includes/<?php echo 'gallery-opti.php'; ?>"); ?&gt;' onClick = "select_all(this)"> 
 </pre>
+---------------------------------
